@@ -6,14 +6,16 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     public void switchCat(View view) {
 
         Log.i("Click","Please click!!!");
-        ImageView image=(ImageView)findViewById(R.id.img);
-        image.setImageResource(R.drawable.t);
+        ImageView img=(ImageView)findViewById(R.id.img);
+        img.setImageResource(R.drawable.t);
+        Toast.makeText(this, "Next image", Toast.LENGTH_SHORT).show();
 
 
     }
